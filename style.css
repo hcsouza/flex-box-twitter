@@ -1,0 +1,521 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #E6ECF0;
+    font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important; 
+}
+
+input, button{
+  outline: 0;
+}
+
+.content {
+  max-width: 1170px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 30px;
+}
+
+header#main-header {
+    background: #fff;
+    height: 46px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 1;
+}
+
+header#main-header .content { 
+    display: flex;
+}
+
+
+header#main-header nav{
+    height: 100%;
+    width: 20%;
+}
+
+header#main-header nav.icons ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    text-decoration: none;
+    flex-direction: row; 
+    justify-content: space-around;
+}
+
+header#main-header nav.icons ul li {
+    font-size: 13px;
+    font-weight: bold;
+    color: #667580;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 9px ;
+}
+
+header#main-header nav.icons ul li span { margin-left: 8px;}
+
+header#main-header div.logo { 
+  width: 100%; 
+  height: 100%; 
+  display: flex; 
+  align-items: center;  
+  justify-content: center;
+}
+
+header#main-header div.search { 
+    width: 40%; 
+    height: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header#main-header div.search input { 
+  height: 80%;
+  border-radius: 16px; 
+  border: 1px solid #E6ECF0;
+  padding: 0 30px 0 12px;
+  font-size: 12px;
+  color: #667581;
+  width: 220px;
+  background: #F5F8FA url('/images/images/search.svg') no-repeat 190px center;
+  margin-right: 15px ;
+}
+
+header#main-header div.search img { 
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  margin-right: 15px ;
+}
+
+header#main-header div.search button{
+  height: 34px;
+  background: #3BB9E3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+  border: 0;
+  border-radius: 16px;
+}
+
+div.banner {
+  width: 100%;
+  height: 280px;
+  background: #3BB9E3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+div.top-bar {
+  height:59px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  background: #fff;
+}
+
+div.top-bar .content {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding-left: 285px;
+}
+
+div.top-bar ul {
+  display: flex;
+  list-style-type: none;
+  height: 100%;
+}
+
+
+div.top-bar ul li {
+  height: 100%;
+  display: flex;
+
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 0 15px;
+  position: relative;
+}
+
+div.top-bar ul li.active::after{
+  content: '';
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #3bb9e3;
+}
+
+div.top-bar ul li span {
+  font-size: 12px;
+  color: #667580;
+  font-weight: bold;
+}
+div.top-bar .content div{
+}
+div.top-bar ul li strong {
+  font-size: 18px;
+  color: #667580;
+  font-weight: bold;
+  margin-top: 2px;
+}
+
+div.top-bar ul li.active strong {
+  color: #3BB9E3;
+}
+
+div.top-bar .content .actions {
+  display: flex;
+  align-items: center;
+}
+
+div.top-bar .content .actions button{
+  height: 34px;
+  background: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #3bb9e3;
+  border: 1px solid #3BB9E3;
+  border-radius: 16px;
+  margin-right: 20px;
+
+}
+
+/*wrapper-content*/
+div.wrapper-content { 
+  display: flex;
+  justify-content: space-between;
+}
+
+div.wrapper-content aside.profile{
+  width: 260px;
+}
+
+
+div.wrapper-content aside.profile img.avatar{
+  width: 200px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  margin-top: -130px;
+  margin-bottom: 10px;
+}
+
+div.wrapper-content aside.profile h1{
+  font-size: 21px;
+  color: #1f2226;
+  margin-top:10px;
+}
+
+div.wrapper-content aside.profile span{
+  font-size: 14px;
+  color: #53626c;
+}
+
+div.wrapper-content aside.profile p{
+  margin-top: 15px;
+  font-size: 14px;
+  color: #1f2226;
+}
+
+div.wrapper-content aside.profile ul{
+  list-style: none;
+  margin-top: 20px;
+}
+
+
+div.wrapper-content aside.profile ul li {
+  font-size: 14px;
+  color: #657786;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+
+div.wrapper-content aside.profile ul li:first-child {
+  margin-top:0;
+}
+
+div.wrapper-content aside.profile ul li img {
+  margin-right: 10px;
+}
+
+
+div.wrapper-content aside.profile div.followers {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div.wrapper-content aside.profile div.followers div img {
+  margin-right: 5px;
+}
+
+div.wrapper-content aside.profile div.followers div span {
+  color: #3bb9e3;
+  font-size: 14px;
+}
+
+div.wrapper-content aside.profile div.followers ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1px;
+}
+
+div.wrapper-content aside.profile div.followers li img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+/*photos*/
+div.wrapper-content aside.profile div.photos {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div.wrapper-content aside.profile div.photos div span {
+  color: #3bb9e3;
+  font-size: 14px;
+}
+
+div.wrapper-content aside.profile div.photos div img {
+  margin-right: 5px;
+}
+div.wrapper-content aside.profile div.photos ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1px;
+}
+
+div.wrapper-content aside.profile div.photos li img {
+  width: 70px;
+  border-radius: 5px;
+}
+
+div.wrapper-content aside.widgets {
+  width: 290;
+}
+div.wrapper-content aside.widgets div.who-follow {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  width: 100%;
+  height: 280px;
+  margin-top: 10px;
+}
+
+div.wrapper-content aside.widgets div.who-follow div.follow-links {
+  width: 100%;
+  margin-right: 5px;
+  display: flex;
+  align-items: baseline;
+}
+
+div.wrapper-content aside.widgets div.who-follow div.follow-links h1 {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-left: 12px;
+}
+
+
+div.wrapper-content aside.widgets div.who-follow div.follow-links a {
+  font-size: 12px;
+  color: #3BB9E3;
+  text-decoration: none;
+  position: relative;
+  padding-left: 10px;
+}
+
+div.wrapper-content aside.widgets div.who-follow div.follow-links a::before {
+  content: '';
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: #000;
+  position: absolute;
+  left: 4px;
+  top: 6px;
+}
+
+div.wrapper-content aside.widgets div.who-follow ul {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+}
+
+div.wrapper-content aside.widgets div.who-follow ul li {
+  display: flex;
+  height: 60px;
+  margin-top: 10px;
+  margin-left: 15px;
+  justify-content: space-between;
+  border-bottom: 1px  solid #ccd6dd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  margin-right: 15px;
+}
+
+div.wrapper-content aside.widgets div.who-follow ul li:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0; 
+  border: 0;
+}
+
+div.wrapper-content aside.widgets div.who-follow ul li div.tofollow-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+div.wrapper-content aside.widgets div.who-follow ul li div.tofollow-box img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+div.wrapper-content aside.widgets div.who-follow ul li div.tofollow-box div{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+div.wrapper-content aside.widgets div.who-follow ul li div.tofollow-box div span span {
+  color: #657786;
+}
+
+
+div.wrapper-content aside.widgets div.who-follow ul li div.tofollow-box div button {
+  height: 28px;
+  background: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #3bb9e3;
+  border: 1px solid #3BB9E3;
+  border-radius: 16px;
+  margin-right: 20px;
+  margin-top: 2px;
+}
+
+div.wrapper-content aside.widgets div.who-follow ul li a {
+  margin-right: 8px;
+  text-decoration: none;
+  color: #657786;
+}
+
+div.wrapper-content .timeline{
+  flex:1;
+  background: #fff;
+  margin: 10px 20px 0;
+}
+
+div.wrapper-content .timeline nav{
+  display: flex;
+  border-bottom: 1px solid #bfcbd4;
+  padding-bottom: 10px;
+}
+
+div.wrapper-content .timeline nav a:first-child{
+  margin-left: 20px ;
+  color: #000;
+}
+
+div.wrapper-content .timeline nav a{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #3BB9E3;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+div.wrapper-content .timeline ul{
+  display: flex;
+  list-style: none;
+  border-bottom: 1px  solid #ccd6dd;
+}
+
+div.wrapper-content .timeline ul.tweets {
+  display: flex;
+  flex-direction: column;
+}
+
+div.wrapper-content .timeline ul.tweets > li  {
+  border-bottom: 1px solid #bfcbd4;
+}
+
+div.wrapper-content .timeline ul.tweets li div.card-tweet {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+div.wrapper-content .timeline ul.tweets li div.card-tweet div {
+  margin-left: 10px;
+}
+
+div.wrapper-content .timeline ul.tweets li div.card-tweet div p {
+  margin-top: 10px;
+  margin-right: 5px;
+}
+
+div.wrapper-content .timeline ul.tweets li div.card-tweet img.avatar{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  margin-bottom: 10px 
+}
+
+div.wrapper-content .timeline ul.tweets li div.card-tweet ul {
+  display: flex;
+  list-style: none;
+  border: 0;
+  margin-top: 10px;
+  align-items: center;
+} 
+
+div.wrapper-content .timeline ul.tweets li div.card-tweet ul li {
+  margin-right: 60px;
+}
+
+div.wrapper-content .timeline ul.tweets li div.card-tweet ul li span{
+  margin-left: 5px;
+}
+
+
+
